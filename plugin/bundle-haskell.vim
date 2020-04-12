@@ -25,3 +25,10 @@ let g:haskell_completion_ghc = 0              " Disabled for neco-ghc
 let g:necoghc_enabled_detailed_browse = 1
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 " -------------------------------------------------------------------------- }}}
+" {{{ vim-hoogle
+let g:hoogle_search_buf_name = 'HoogleSearch'
+let g:hoogle_search_count = 20
+au BufNewFile,BufRead *.hs map <buffer> <leader>Hc :Hoogle<cr>
+au BufNewFile,BufRead *.hs map <buffer> <leader>Hh :Hoogle<cr>
+au BufNewFile,BufRead *.hs map <buffer> <leader>Hl :Hoogle<cr>
+" -------------------------------------------------------------------------- }}}
