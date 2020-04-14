@@ -2,6 +2,7 @@
 if exists('g:loaded_bundle_haskell')
   finish
 endif
+let g:loaded_bundle_haskell=1
 " -------------------------------------------------------------------------- }}}
 " {{{ Haskell programming language
 let g:loaded_bundle_haskell = 1
